@@ -23,3 +23,9 @@ The `sudo`  is required because you will be changing files that you do not own a
 #### Enable Camera
 
 >In order to use the Raspberry Pi Camera Module, you must enable it here. Select the option and proceed to `Enable`. This will make sure at least 128MB of RAM is dedicated to the GPU.
+
+* Execute the following instructions on the command line to download and install the latest kernel, GPU firmware, and applications. You'll need an internet connection for this to work correctly.
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
