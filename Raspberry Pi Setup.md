@@ -5,8 +5,11 @@ This guide is tested on RPI 3.
 ### How to setup the Raspberry Pi
 
 * Download a RASPBIAN image from [here](https://www.raspberrypi.org/downloads/raspbian/).
+
 * Follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to install the RASBIAN OS. 
+
 * Once the sd card is ready and the OS burned on the SD.
+
 * Enable SSH on a headless Raspberry Pi (add file to SD card on another machine"PC")
 >For headless setup, `SSH` can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the `ssh` file. If it is found, SSH is enabled and the file is deleted. The content of the file does not matter; it could contain text, or nothing at all.
 
@@ -31,9 +34,31 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
-With this file in place, Raspbian will move it in /etc/wpa_supplicant/ when the system is booted.
+With this file in place, Raspbian will move it in `/etc/wpa_supplicant/` when the system is booted.
 
 * The next step is to put the SD Card into the Raspberry pi and plug in the power to start working on the Raspberry pi.
+
+* `SSH` using Windows; open `putty.exe` on your Windows.
+
+* Add your Raspberry Pi as a host
+>PuTTY does not include an installer package: it is a stand-alone .exe file. When you run it, you will see the configuration screen below:
+
+![putty](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/ssh-win-config.png)
+
+Type the IP address of the Pi into the `Host Name` field and click the `Open` button. If nothing happens when you click the `Open` button, and you eventually see a message saying `Network error: Connection timed out`, it is likely that you have entered the wrong IP address for the Pi.
+
+* Connect
+>When the connection works you will see the security warning shown below. You can safely ignore it, and click the 'Yes' button. You will only see this warning the first time PuTTY connects to a Raspberry Pi that it has not seen before.
+
+![warning](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/ssh-win-warning.png)
+
+You will now see the usual login prompt. Log in with the same username and password you would use on the Pi itself. The default login for Raspbian is `pi` with the password `raspberry`.
+
+You should now have the Raspberry Pi prompt which will be identical to the one found on the Raspberry Pi itself.
+
+``
+pi@raspberrypi ~ $
+``
 
 * Now you need to open the Raspberry Pi Config screen using the `raspi-config` program you will have used when you first set up your Raspberry Pi.
    ```
