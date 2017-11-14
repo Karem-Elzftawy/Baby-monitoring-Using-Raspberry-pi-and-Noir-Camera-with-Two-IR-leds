@@ -38,7 +38,13 @@ With this file in place, Raspbian will move it in `/etc/wpa_supplicant/` when th
 
 * The next step is to put the SD Card into the Raspberry pi and plug in the power to start working on the Raspberry pi.
 
-* `SSH` using Windows; open `putty.exe` on your Windows.
+* Detecting IP address of Raspberry Pi on your network
+> To get IP of any device currently active on your network, you can use free utility **[Advanced IP Scanner]**(http://www.advanced-ip-scanner.com/), scan the network and you will find your Raspberry Pi IP as shown below.
+
+
+![IP](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/raspberry-pi-ip.png)
+
+* `SSH` using Windows; open **[putty]**(http://www.putty.org/) on your Windows.
 
 * Add your Raspberry Pi as a host
 >PuTTY does not include an installer package: it is a stand-alone .exe file. When you run it, you will see the configuration screen below:
@@ -59,6 +65,8 @@ You should now have the Raspberry Pi prompt which will be identical to the one f
 ``
 pi@raspberrypi ~ $
 ``
+
+![ssh](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/ssh-win-window.png)
 
 * Now you need to open the Raspberry Pi Config screen using the `raspi-config` program you will have used when you first set up your Raspberry Pi.
    ```
