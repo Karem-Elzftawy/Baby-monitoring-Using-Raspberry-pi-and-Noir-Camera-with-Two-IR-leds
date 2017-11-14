@@ -18,7 +18,7 @@ The `sudo`  is required because you will be changing files that you do not own a
 
 1. **Moving around the menu**
 
-   >Use the up and down arrow keys to move the highlighted selection between the options available. Pressing the right arrow key will jump out of the Options menu and take you to the <Select> and <Finish> buttons. Pressing left will take you back to the options. Alternatively, you can use the Tab key to switch between these.
+   Use the up and down arrow keys to move the highlighted selection between the options available. Pressing the right arrow key will jump out of the Options menu and take you to the <Select> and <Finish> buttons. Pressing left will take you back to the options. Alternatively, you can use the Tab key to switch between these.
    
 2. **Expand the filesytem**
 
