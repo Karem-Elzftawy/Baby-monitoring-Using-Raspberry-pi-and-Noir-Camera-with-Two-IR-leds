@@ -6,7 +6,12 @@ This guide is tested on RPI 3.
 
 * Download a RASPBIAN image from [here](https://www.raspberrypi.org/downloads/raspbian/).
 * Follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to install the RASBIAN OS. 
-* Once the sd card is ready and the system has rebooted.
+* Once the sd card is ready and the OS burned on the SD.
+* You should enable SSH on a headless Raspberry Pi (add file to SD card on another machine"PC")
+
+>For headless setup, `SSH` can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the `ssh` file. If it is found, SSH is enabled and the file is deleted. The content of the file does not matter; it could contain text, or nothing at all.
+
+If you have loaded Raspbian onto a blank SD card, you will have two partitions. The first one, which is the smaller one, is the boot partition. Place the file into this one.
 
 * Now you need to open the Raspberry Pi Config screen using the `raspi-config` program you will have used when you first set up your Raspberry Pi.
    ```
@@ -47,4 +52,5 @@ You will see the desktop of the Raspberry Pi inside a window on your computer or
 ```
 sudo apt-get update
 sudo apt-get upgrade
+sudo raspi-update
 ```
