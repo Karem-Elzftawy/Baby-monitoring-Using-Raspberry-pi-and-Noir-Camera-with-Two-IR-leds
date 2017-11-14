@@ -7,10 +7,17 @@ This guide is tested on RPI 3.
 * Download a RASPBIAN image from [here](https://www.raspberrypi.org/downloads/raspbian/).
 * Follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to install the RASBIAN OS. 
 * Once the sd card is ready and the system has rebooted.
-*   ``sudo raspi-config`` to open the Raspberry Pi Config screen. 
- * Expand the filesytem and reboot.
 
-git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git  
-cd RPi_Cam_Web_Interface  
-chmod u+x *.sh  
-./install.sh  
+*Now you need to open the Raspberry Pi Config screen using the `raspi-config` program you will have used when you first set up your Raspberry Pi.
+   ```
+   sudo raspi-config
+   ```  
+* Expand the filesytem and reboot.
+
+
+*Execute the following instructions on the command line to download and install the latest kernel, GPU firmware, and applications. You'll need an internet connection for this to work correctly.
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+* 
