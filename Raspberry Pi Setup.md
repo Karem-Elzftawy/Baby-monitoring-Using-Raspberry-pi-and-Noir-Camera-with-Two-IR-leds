@@ -2,7 +2,7 @@
 
 This guide is tested on RPI 3.
 
-##### How to setup the Raspberry Pi
+### How to setup the Raspberry Pi
 
 * Download a RASPBIAN image from [here](https://www.raspberrypi.org/downloads/raspbian/).
 * Follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to install the RASBIAN OS. 
@@ -12,7 +12,10 @@ This guide is tested on RPI 3.
    ```
    sudo raspi-config
    ```  
-* Expand the filesytem and reboot.
+The `sudo`  is required because you will be changing files that you do not own as the `pi` user.
+![raspi-config](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/raspi-config.png)
+
+> Expand the filesytem and reboot.
 
 
 *Execute the following instructions on the command line to download and install the latest kernel, GPU firmware, and applications. You'll need an internet connection for this to work correctly.
