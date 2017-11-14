@@ -16,7 +16,7 @@ The `sudo`  is required because you will be changing files that you do not own a
 
 ![raspi-config](https://github.com/Karem-Elzftawy/Baby-monitoring-Using-Raspberry-pi-and-Noir-Camera-with-Two-IR-leds/blob/master/images/raspi-config.png)
 
-1. **Moving around the menu**
+1. **Moving around the menu**.
  kareem
 2. kareem
 
